@@ -40,7 +40,7 @@ export class MatchingService {
 
     if (overlapMax >= overlapMin) {
       budgetScore = 100;
-      whyItWorks.push(`Compatible budget range ($${overlapMin}–$${overlapMax})`);
+      whyItWorks.push(`Compatible budget range (₹${overlapMin}–₹${overlapMax})`);
     } else {
       const gap = overlapMin - overlapMax;
       budgetScore = Math.max(0, 100 - Math.round(gap / 10));
@@ -161,7 +161,7 @@ export class MatchingService {
 
     let budgetFit = isBudgetSufficient ? 100 : Math.max(30, Math.round((totalMaxBudget / apartment.monthlyRent) * 100));
     if (isBudgetSufficient) {
-      whyItWorks.push(`Combined max budget ($${totalMaxBudget}) covers monthly rent ($${apartment.monthlyRent})`);
+      whyItWorks.push(`Combined max budget (₹${totalMaxBudget}) covers monthly rent (₹${apartment.monthlyRent})`);
     }
 
     // Location match

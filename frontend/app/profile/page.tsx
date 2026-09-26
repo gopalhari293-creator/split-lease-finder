@@ -205,21 +205,21 @@ export default function ProfilePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1">Min Budget ($/mo)</label>
+              <label className="block text-xs font-bold text-slate-700 mb-1">Min Budget (₹/mo)</label>
               <input
                 type="number"
                 value={formData.budgetMin}
-                onChange={(e) => setFormData({ ...formData, budgetMin: parseInt(e.target.value, 10) || 500 })}
+                onChange={(e) => setFormData({ ...formData, budgetMin: parseInt(e.target.value, 10) || 5000 })}
                 className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs"
               />
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1">Max Budget ($/mo)</label>
+              <label className="block text-xs font-bold text-slate-700 mb-1">Max Budget (₹/mo)</label>
               <input
                 type="number"
                 value={formData.budgetMax}
-                onChange={(e) => setFormData({ ...formData, budgetMax: parseInt(e.target.value, 10) || 1500 })}
+                onChange={(e) => setFormData({ ...formData, budgetMax: parseInt(e.target.value, 10) || 20000 })}
                 className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-bold text-brand-600"
               />
             </div>

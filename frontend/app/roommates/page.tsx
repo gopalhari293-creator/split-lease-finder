@@ -15,7 +15,7 @@ export default function RoommatesPage() {
   // Filter States
   const [location, setLocation] = useState('');
   const [gender, setGender] = useState('All');
-  const [maxBudget, setMaxBudget] = useState('2000');
+  const [maxBudget, setMaxBudget] = useState('30000');
   const [minScore, setMinScore] = useState('50');
 
   const fetchRoommates = async () => {
@@ -71,16 +71,16 @@ export default function RoommatesPage() {
           </div>
 
           <div>
-            <label className="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">Max Budget ($/mo)</label>
+            <label className="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">Max Budget (₹/mo)</label>
             <select
               value={maxBudget}
               onChange={(e) => setMaxBudget(e.target.value)}
               className="w-full px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs"
             >
-              <option value="1000">$1,000 /mo</option>
-              <option value="1500">$1,500 /mo</option>
-              <option value="2000">$2,000 /mo</option>
-              <option value="3000">Any budget</option>
+              <option value="15000">₹15,000 /mo</option>
+              <option value="25000">₹25,000 /mo</option>
+              <option value="35000">₹35,000 /mo</option>
+              <option value="100000">Any budget</option>
             </select>
           </div>
 

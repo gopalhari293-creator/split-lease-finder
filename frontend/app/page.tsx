@@ -68,7 +68,7 @@ export default function LandingPage() {
                 />
                 <div className="text-left">
                   <h4 className="font-bold text-slate-900 text-sm">Alex R.</h4>
-                  <p className="text-xs text-slate-500">$1,300 Max Budget</p>
+                  <p className="text-xs text-slate-500">₹15,000 Max Budget</p>
                 </div>
               </div>
 
@@ -83,7 +83,7 @@ export default function LandingPage() {
                 />
                 <div className="text-left">
                   <h4 className="font-bold text-slate-900 text-sm">Sarah C.</h4>
-                  <p className="text-xs text-slate-500">$1,350 Max Budget</p>
+                  <p className="text-xs text-slate-500">₹16,000 Max Budget</p>
                 </div>
               </div>
 
@@ -98,7 +98,7 @@ export default function LandingPage() {
                 />
                 <div className="text-left">
                   <h4 className="font-bold text-slate-900 text-sm">Downtown 2BR</h4>
-                  <p className="text-xs text-emerald-600 font-semibold">$2,600 /mo</p>
+                  <p className="text-xs text-emerald-600 font-semibold">₹30,000 /mo</p>
                 </div>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function LandingPage() {
                     SplitLease Combined Match Result
                   </p>
                   <p className="text-sm font-extrabold text-slate-900">
-                    94% Compatibility • Rent split: $1,300/mo each
+                    94% Compatibility • Rent split: ₹15,000/mo each
                   </p>
                 </div>
               </div>
@@ -228,7 +228,7 @@ export default function LandingPage() {
 
               <div className="space-y-4">
                 {[
-                  { label: 'Budget Fit ($900 - $1400/mo)', score: 95, color: 'bg-emerald-500' },
+                  { label: 'Budget Fit (₹10,000 - ₹20,000/mo)', score: 95, color: 'bg-emerald-500' },
                   { label: 'Cleanliness & Schedule', score: 90, color: 'bg-brand-500' },
                   { label: 'Location & Move-in Date', score: 94, color: 'bg-violet-500' },
                   { label: 'Pet & Guest Preferences', score: 88, color: 'bg-indigo-500' },

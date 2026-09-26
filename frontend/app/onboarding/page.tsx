@@ -222,20 +222,20 @@ export default function OnboardingPage() {
               <div className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">Min Budget ($/mo)</label>
+                    <label className="block text-xs font-bold text-slate-700 mb-1">Min Budget (₹/mo)</label>
                     <input
                       type="number"
                       value={formData.budgetMin}
-                      onChange={(e) => setFormData({ ...formData, budgetMin: parseInt(e.target.value, 10) || 500 })}
+                      onChange={(e) => setFormData({ ...formData, budgetMin: parseInt(e.target.value, 10) || 5000 })}
                       className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm"
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">Max Budget ($/mo)</label>
+                    <label className="block text-xs font-bold text-slate-700 mb-1">Max Budget (₹/mo)</label>
                     <input
                       type="number"
                       value={formData.budgetMax}
-                      onChange={(e) => setFormData({ ...formData, budgetMax: parseInt(e.target.value, 10) || 1500 })}
+                      onChange={(e) => setFormData({ ...formData, budgetMax: parseInt(e.target.value, 10) || 20000 })}
                       className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm font-bold text-brand-600"
                     />
                   </div>
@@ -448,7 +448,7 @@ export default function OnboardingPage() {
               <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3 text-xs">
                 <div className="flex justify-between border-b border-slate-200 pb-2">
                   <span className="text-slate-500">Budget Range:</span>
-                  <span className="font-bold text-slate-900">${formData.budgetMin} – ${formData.budgetMax} /mo</span>
+                  <span className="font-bold text-slate-900">₹{formData.budgetMin} – ₹{formData.budgetMax} /mo</span>
                 </div>
                 <div className="flex justify-between border-b border-slate-200 pb-2">
                   <span className="text-slate-500">Locations:</span>

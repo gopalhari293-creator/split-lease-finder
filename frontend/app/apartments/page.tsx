@@ -96,12 +96,12 @@ export default function ApartmentsPage() {
           </div>
 
           <div>
-            <label className="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">Max Rent ($/mo)</label>
+            <label className="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">Max Rent (₹/mo)</label>
             <input
               type="number"
               value={maxRent}
               onChange={(e) => setMaxRent(e.target.value)}
-              placeholder="e.g. 3000"
+              placeholder="e.g. 35000"
               className="w-full px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs"
             />
           </div>

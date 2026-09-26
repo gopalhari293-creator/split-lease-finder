@@ -15,7 +15,7 @@ export const seedDatabase = async () => {
     return;
   }
 
-  console.log('[Seed] Seeding database with realistic SplitLease dataset...');
+  console.log('[Seed] Seeding database with realistic SplitLease dataset (INR)...');
 
   const passwordHash = await bcrypt.hash('password123', 10);
   const adminPasswordHash = await bcrypt.hash('admin123', 10);
@@ -29,7 +29,7 @@ export const seedDatabase = async () => {
       role: 'USER' as const,
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
       bio: 'Senior Frontend Engineer at TechCorp. Love bouldering, specialty coffee, and clean minimalist living.',
-      phone: '+1 (512) 555-0142',
+      phone: '+91 98765 43210',
       isEmailVisible: true,
       isPhoneVisible: false,
     },
@@ -40,7 +40,7 @@ export const seedDatabase = async () => {
       role: 'USER' as const,
       avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80',
       bio: 'UX Designer & plant enthusiast. Work hybrid 3 days/week. Quiet during weeknights.',
-      phone: '+1 (512) 555-0189',
+      phone: '+91 98765 43211',
       isEmailVisible: true,
       isPhoneVisible: true,
     },
@@ -51,7 +51,7 @@ export const seedDatabase = async () => {
       role: 'USER' as const,
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
       bio: 'Finance Analyst. Early riser, avid runner. Looking for a respectful roommate in Downtown/East Austin.',
-      phone: '+1 (512) 555-0133',
+      phone: '+91 98765 43212',
     },
     {
       name: 'Elena Rostova',
@@ -135,8 +135,8 @@ export const seedDatabase = async () => {
       occupation: 'Frontend Engineer',
       universityOrCompany: 'TechCorp',
       preferredLocations: ['Downtown Austin', 'East Austin', 'Rainey Street'],
-      budgetMin: 900,
-      budgetMax: 1400,
+      budgetMin: 12000,
+      budgetMax: 22000,
       moveInDate: new Date('2026-10-15'),
       leaseDuration: '12 months',
       lifestyle: {
@@ -167,8 +167,8 @@ export const seedDatabase = async () => {
       occupation: 'UX Designer',
       universityOrCompany: 'Creative Co.',
       preferredLocations: ['East Austin', 'Mueller', 'Hyde Park'],
-      budgetMin: 850,
-      budgetMax: 1350,
+      budgetMin: 10000,
+      budgetMax: 20000,
       moveInDate: new Date('2026-10-01'),
       leaseDuration: '12 months',
       lifestyle: {
@@ -199,8 +199,8 @@ export const seedDatabase = async () => {
       occupation: 'Finance Analyst',
       universityOrCompany: 'Deloitte',
       preferredLocations: ['Downtown Austin', 'South Congress', 'Zilker'],
-      budgetMin: 1000,
-      budgetMax: 1600,
+      budgetMin: 15000,
+      budgetMax: 25000,
       moveInDate: new Date('2026-11-01'),
       leaseDuration: '12 months',
       lifestyle: {
@@ -231,8 +231,8 @@ export const seedDatabase = async () => {
       occupation: 'Graduate Student',
       universityOrCompany: 'UT Austin',
       preferredLocations: ['Hyde Park', 'North Campus', 'Central Austin'],
-      budgetMin: 700,
-      budgetMax: 1100,
+      budgetMin: 8000,
+      budgetMax: 15000,
       moveInDate: new Date('2026-10-01'),
       leaseDuration: '12 months',
       lifestyle: {
@@ -263,8 +263,8 @@ export const seedDatabase = async () => {
       occupation: 'Product Manager',
       universityOrCompany: 'Meta',
       preferredLocations: ['Downtown Austin', 'Rainey Street', 'South Congress'],
-      budgetMin: 1200,
-      budgetMax: 1800,
+      budgetMin: 18000,
+      budgetMax: 30000,
       moveInDate: new Date('2026-10-15'),
       leaseDuration: '12 months',
       lifestyle: {
@@ -303,7 +303,7 @@ export const seedDatabase = async () => {
       ],
       location: 'Downtown Austin',
       address: '401 Colorado St, Austin, TX 78701',
-      monthlyRent: 2650,
+      monthlyRent: 38000,
       bedrooms: 2,
       bathrooms: 2,
       sqft: 1150,
@@ -326,7 +326,7 @@ export const seedDatabase = async () => {
       ],
       location: 'East Austin',
       address: '1201 E 6th St, Austin, TX 78702',
-      monthlyRent: 2200,
+      monthlyRent: 32000,
       bedrooms: 2,
       bathrooms: 2,
       sqft: 980,
@@ -336,7 +336,7 @@ export const seedDatabase = async () => {
       leaseDuration: '12 months',
       description: 'Chic 2-bedroom industrial modern flat steps away from East Austin coffee shops, art galleries, and dining. Hardwood floors and spacious open plan.',
       apartmentType: 'Condo',
-      parking: 'Available ($)',
+      parking: 'Available',
       petPolicy: 'Dogs & cats allowed',
       isFeatured: true,
       createdBy: sarahUser._id,
@@ -349,7 +349,7 @@ export const seedDatabase = async () => {
       ],
       location: 'Rainey Street',
       address: '70 Rainey St, Austin, TX 78701',
-      monthlyRent: 3100,
+      monthlyRent: 48000,
       bedrooms: 3,
       bathrooms: 2.5,
       sqft: 1420,
@@ -372,7 +372,7 @@ export const seedDatabase = async () => {
       ],
       location: 'Mueller',
       address: '1900 Aldrich St, Austin, TX 78723',
-      monthlyRent: 1950,
+      monthlyRent: 26000,
       bedrooms: 2,
       bathrooms: 1.5,
       sqft: 920,
@@ -393,7 +393,7 @@ export const seedDatabase = async () => {
       ],
       location: 'South Congress',
       address: '1604 S Congress Ave, Austin, TX 78704',
-      monthlyRent: 2800,
+      monthlyRent: 42000,
       bedrooms: 3,
       bathrooms: 2,
       sqft: 1300,
@@ -414,7 +414,7 @@ export const seedDatabase = async () => {
       ],
       location: 'Hyde Park',
       address: '4105 Avenue G, Austin, TX 78751',
-      monthlyRent: 1750,
+      monthlyRent: 24000,
       bedrooms: 2,
       bathrooms: 1,
       sqft: 850,
@@ -465,7 +465,7 @@ export const seedDatabase = async () => {
     apartment: createdApartments[1]._id,
   });
 
-  console.log('[Seed] Database seeded successfully with users, profiles, apartments, matches, and chats.');
+  console.log('[Seed] Database seeded successfully with users, profiles, apartments, matches, and chats (INR).');
 };
 
 if (process.argv[1]?.endsWith('seed.ts')) {
